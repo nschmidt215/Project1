@@ -1,0 +1,370 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*            End of CSS Reset            */
+
+/*                 Setup                  */
+
+/*               Borderbox                */
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/* clearfix */
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  clear: both;
+  *zoom: 1;
+}
+/*               End of Setup             */
+/*                  Font                  */
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_bold.ttf") format("truetype");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_semibold.ttf") format("truetype");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_medium.ttf") format("truetype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_text.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_thin.ttf") format("truetype");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_ultralight.ttf") format("truetype");
+  font-weight: 100;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+nav {
+  background-color: #000;
+ }
+
+ nav a {
+  display: inline-block;
+  width: 10%;
+  padding: 0 10px;
+  text-align: center;
+ }
+
+.navbar:link{
+  text-decoration: none;
+}
+
+.navbar:visited{
+  color: white;
+  text-decoration: none;
+}
+
+.navbar:hover{
+  background-color: gray;
+  text-decoration: none;
+  opacity: 0.65;
+} 
+
+#rightcontent {
+  display:inline-block;
+  vertical-align:top;
+  margin: 150px;
+}
+
+#iphone6s {
+  margin: 10px;
+}
+
+.container p {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_thin.ttf") format("truetype");
+  font-weight: 300;
+  font-size: 20px;
+}
+
+#firstsentence {
+  font-size:175%;
+  inline-size:350px;
+  overflow-wrap: break-all;
+  text-align: center;
+}
+
+#secondsentence {
+  text-align: center;
+  color: #88bce6;
+}
+
+a.learn:link{
+  text-decoration: none;
+  color: #88bce6;
+}
+
+a.learn:visited{
+  color: #88bce6;
+  text-decoration: none;
+}
+
+a.learn:hover{
+  color: rgb(94, 94, 94);
+  text-decoration: underline;
+}
+
+a.learn:active{
+  color: #88bce6;
+}
+
+.col-3 {
+  width: 25%;
+  display: inline-block;
+  height: 200px;
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+}
+
+#plugadapter:link{
+  text-decoration: none;
+  color: #88bce6;
+}
+
+#plugadapter:visited{
+  text-decoration: none;
+  color: #88bce6;
+}
+
+#plugadapter:hover{
+  color: rgb(94, 94, 94);
+  text-decoration: underline;
+}
+
+#plugadapter:active{
+  color: #88bce6;
+}
+
+#ipad {
+  background-image: url(./images/ipad_pro_large.jpg)
+}
+
+#iwatch {
+  background-image: url(./images/watch_large.jpg)
+}
+
+#accessories {
+  background-image: url(./images/accessories_large.jpg)
+}
+
+#macbook {
+  background-image: url(./images/macbook_large.jpg)
+}
+
+ #recall {
+    text-align: center;
+    margin: 30px;
+    color: #88bce6;
+  }
+
+.label {
+  font-weight:bold;
+  color: #808080;
+}
+
+  footer {
+    color: #999999;
+    background-color: #f2f2f2;
+    padding-top: 20px; 
+    padding-bottom: 20px;
+    vertical-align: top;
+  }
+
+ .col-4{
+   margin-bottom: 20px;
+   display: inline-block;
+   line-height: 1.75;
+   font-size: 12px;
+   vertical-align: top;
+   width: 20%;
+ }
+
+ .end:link{
+    text-decoration: none;
+    color: #999999;
+ }
+
+ .end:visited{
+    text-decoration: none;
+    color: #999999;
+ }
+
+ .end:hover{
+    text-decoration: underline;
+    color:rgb(41, 41, 41)
+ }
+
+ .end:active{
+    text-decoration: none;
+    color: #999999;
+ }
+
+ #storeinfo{
+   font-size: 12px;
+ }
+
+ .info:link{
+   text-decoration: none;
+   color: #88bce6;
+ }
+
+ .info:visited{
+   text-decoration: none;
+   color:#88bce6;
+ }
+
+ .info:hover{
+   color: rgb(41, 41, 41);
+   text-decoration: underline;
+ }
+
+ .info:active{
+   color: #88bce6;
+   text-decoration: none;
+ }
+
+ .color{
+  color: #88bce6; 
+ }
+
+ #footsection1, #footsection2{
+   display: inline-block;
+   font-size: 12px;
+ }
+
+ .links {
+  color: grey;
+  margin-left: 0.75em;
+  margin-right: 0.75em;
+ }
+
+a.links:link{
+  color:grey;
+  text-decoration: none;
+}
+
+a.links:visited{
+  color:grey;
+  text-decoration: none;
+}
+
+a.links:hover{
+  color:rgb(41, 41, 41);
+  text-decoration:underline;
+}
+
+a.links:active{
+  color: grey;
+  text-decoration: none;
+}
+
+ #locale {
+   float: right;
+   font-size: 12px;
+ }
+
+ #usa {
+   width: 15%;
+   height: auto;
+   margin-right: 1%; 
+   flex-basis: 10%  
+}
+
+#usname{
+  align: center;
+  padding-left: 2%;
+}
+
+#flag:link{
+  color: rgb(100, 99, 99);
+  text-decoration: none;
+}
+
+#flag:visited{
+  color: rgb(100, 99, 99);
+  text-decoration: none;
+}
+
+#flag:hover{
+  color: black;
+  text-decoration: underline;
+}
+
+#flag:active{
+  color: rgb(100, 99, 99);
+  text-decoration: none;
+}
